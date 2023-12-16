@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Feed || BlogBurst</title>
+    <link rel="stylesheet" href="feed.css">
+    <link rel="stylesheet" href="sidebar.css">
+    <link rel="stylesheet" href="css/animate.min.css" type="text/css">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.css" type="text/css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Agbalumo&family=Lato:wght@100&family=Montserrat:ital,wght@1,100&family=Open+Sans:wght@300&family=Poppins:ital,wght@0,100;1,100&family=Roboto:wght@100&family=Sometype+Mono&display=swap" rel="stylesheet">
+    <link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+</head>
+<body id="bbThemeMode">
+
+    <!--Dark and Light mode
+    <div class="theme">
+        <button id="bbLight" class="btn btn-sm btn-warning">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-brightness-high-fill" viewBox="0 0 16 16">
+                <path d="M12 8a4 4 0 1 1-8 0 4 4 0 0 1 8 0M8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0m0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13m8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5M3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8m10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0m-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0zm9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707M4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708z"/>
+            </svg>
+        </button>
+        
+        <button id="bbDark" class="btn btn-sm btn-dark">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-moon-fill" viewBox="0 0 16 16">
+                <path d="M6 .278a.768.768 0 0 1 .08.858 7.208 7.208 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277.527 0 1.04-.055 1.533-.16a.787.787 0 0 1 .81.316.733.733 0 0 1-.031.893A8.349 8.349 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.752.752 0 0 1 6 .278"/>
+            </svg>
+        </button>
+    </div>
+    Dark and Light mode ends here-->
+    
+
+    <!--sidebar starts here-->
+    <div class="bb-sidebar open">
+        <div class="bb-hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+
+        <!--top icons to navigate feed-->
+        <div class="bb-side-top">
+            <!--logo icons to navigate feed-->
+            <div class="bb-bblogo">
+                <a href="">
+                    <img src="Images/BB-logo.png" width="40" height="40" alt="BB-logo">
+                </a>
+            </div>
+
+            <!--feed icons to navigate feed-->
+            <div class="bb-sideicons bb-active">
+                <a href="#">
+                    <img src="icons/bb-blogs.png" width="30" height="30" alt="feed">
+                    <p style="padding: 0; margin: 0;">
+                        Blogs
+                    </p>
+                </a>
+            </div>
+            <!--feed icons to navigate feed ends-->
+
+            <!--explore icons to navigate feed-->
+            <div class="bb-sideicons">
+                <a href="explore.html">
+                    <img src="icons/bb-explore.png" width="30" height="30" alt="explore">
+                    <p style="padding: 0; margin: 0;">
+                        Explore
+                    </p>
+                </a>
+            </div>
+            <!--explore icons to navigate feed ends-->
+
+            <!--topics icons to navigate feed-->
+            <div class="bb-sideicons">
+                <a href="connect.html">
+                    <img src="icons/bb-connections.png" width="30" height="30" alt="explore">
+                    <p style="padding: 0; margin: 0;">
+                        Connect
+                    </p>
+                </a>
+            </div>
+            <!-- icons to navigate feed ends-->
+
+        </div>
+        <!--top icons to navigate feed ends-->
+
+        <div class="bb-side-bottom">
+            <!--profile icons to navigate feed-->
+            <div class="bb-sideicons">
+                <a href="profile.html">
+                    <img src="icons/bb-profile.png" width="30" height="30" alt="explore">
+                    <p style="padding: 0; margin: 0;">
+                        profile
+                    </p>
+                </a>
+            </div>
+            <!--profile icons to navigate feed ends-->
+
+            <!--logout icons to navigate feed-->
+            <div class="bb-sideicons">
+                <a href="login.html">
+                    <img src="icons/bb-logout.png" width="30" height="30" alt="explore">
+                    <p style="padding: 0; margin: 0;">
+                        Logout
+                    </p>
+                </a>
+            </div>
+            <!--logout icons to navigate feed ends-->
+        </div>
+    </div>
+    <!--sidebar ends here-->
+
+    <!--main items here-->
+    <div class="container-fluid bb-theme">
+
+        <div class="row bb-name">
+            <h3 style="color: black !important;">
+                Blog<i style="color: plum !important;">Burst</i>
+            </h3>
+        </div>
+        <!--container that hold all items-->
+        <div class="row bb-feed-content">
+            
+            <!--Post 1-->
+            <div class="row bb-posts">
+
+                <!--contains profile pic and profile name-->
+                <div class="col bb-post-head">
+                    <div class="profile-pic">
+
+                        <img src="Images/BB-logo.png" alt="">
+
+                    </div>
+
+                    <div class="profile-name">
+
+                        <a href="" class="modal-xl" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                            Omobolaji Durojaiye
+                        </a>
+
+                    </div>
+                </div>
+                <!--contains profile pic and profile name-->
+
+                <!--contains post content-->
+                <div class="row bb-post-content">
+
+                    <h2>
+                        Understanding The Roles Of Snakes In Our Ecosystem 
+                    </h2>
+
+                    <p>
+                        Have you ever pondered the hidden world of venomous snakes? Join us in this series as we reveal the mysteries 
+                        of these misunderstood creatures. From deserts to rainforests, each snake is a unique marvel, not just predators
+                        but nature's own pest control. 
+                        They play a crucial role in maintaining the delicate balance of life and ensuring harmony in our ecosystems. 
+                        Let's dig into why these snake guardians are important in our complex natural world.
+                    </p>
+                    <p>
+                        Have you ever pondered the hidden world of venomous snakes? Join us in this series as we reveal the mysteries 
+                        of these misunderstood creatures. From deserts to rainforests, each snake is a unique marvel, not just predators
+                        but nature's own pest control. 
+                        They play a crucial role in maintaining the delicate balance of life and ensuring harmony in our ecosystems. 
+                        Let's dig into why these snake guardians are important in our complex natural world.
+                    </p>
+
+                </div>
+                <!--contains post content-->
+
+                <!--post actions-->
+                <div class="row bb-post-actions">
+
+                    <div class="col">
+                        <button class="btn bb-btn-plum btn-sm">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-fire" viewBox="0 0 16 16">
+                                <path d="M8 16c3.314 0 6-2 6-5.5 0-1.5-.5-4-2.5-6 .25 1.5-1.25 2-1.25 2C11 4 9 .5 6 0c.357 2 .5 4-2 6-1.25 1-2 2.729-2 4.5C2 14 4.686 16 8 16m0-1c-1.657 0-3-1-3-2.75 0-.75.25-2 1.25-3C6.125 10 7 10.5 7 10.5c-.375-1.25.5-3.25 2-3.5-.179 1-.25 2 1 3 .625.5 1 1.364 1 2.25C11 14 9.657 15 8 15"/>
+                            </svg>
+                            <span id="like">
+
+                            </span>
+                        </button>
+                    </div>
+                    <div class="col">
+                        <button id="notInterested" class="btn btn-danger btn-sm">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-ban-fill" viewBox="0 0 16 16">
+                                <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M2.71 12.584c.218.252.454.488.706.707l9.875-9.875a7.034 7.034 0 0 0-.707-.707l-9.875 9.875Z"/>
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="col">
+                        <a href="">
+                            <button class="btn btn-success btn-sm">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-book-fill" viewBox="0 0 16 16">
+                                    <path d="M8 1.783C7.015.936 5.587.81 4.287.94c-1.514.153-3.042.672-3.994 1.105A.5.5 0 0 0 0 2.5v11a.5.5 0 0 0 .707.455c.882-.4 2.303-.881 3.68-1.02 1.409-.142 2.59.087 3.223.877a.5.5 0 0 0 .78 0c.633-.79 1.814-1.019 3.222-.877 1.378.139 2.8.62 3.681 1.02A.5.5 0 0 0 16 13.5v-11a.5.5 0 0 0-.293-.455c-.952-.433-2.48-.952-3.994-1.105C10.413.809 8.985.936 8 1.783"/>
+                                </svg>
+                            </button>
+                        </a>
+                    </div>
+
+                </div>
+                <!--post actions ends-->
+
+            </div>
+            <!--Post 1 ends-->
+
+            <!--Post 2-->
+            <div class="row bb-posts">
+
+                <!--contains profile pic and profile name-->
+                <div class="col bb-post-head">
+                    <div class="profile-pic">
+
+                        <img src="Images/moat-logo.png" alt="">
+
+                    </div>
+
+                    <div class="profile-name">
+
+                        <a href="">
+                            Moat Academy
+                        </a>
+
+                    </div>
+                </div>
+                <!--contains profile pic and profile name-->
+
+                <!--contains post content-->
+                <div class="row bb-post-content">
+
+                    <h2>
+                        Discover How Apprenticeship Can Boost Your Career
+                    </h2>
+
+                    <p>
+                        When Moat Academy was birthed, the plan of our faculty members was to replicate themselves in our Participants…
+                        And that is the power of Apprenticeship!
+
+                        After getting a degree, a job seeker needs to get industry experience to perform better at the workplace. 
+                        Such trainings give a huge experience in making their career a success. It is also important to choose the 
+                        right path of training whether it is apprenticeship or internship to increase one's employability.
+                    </p>
+                    <p>
+                        When Moat Academy was birthed, the plan of our faculty members was to replicate themselves in our Participants…
+                        And that is the power of Apprenticeship!
+
+                        After getting a degree, a job seeker needs to get industry experience to perform better at the workplace. 
+                        Such trainings give a huge experience in making their career a success. It is also important to choose the 
+                        right path of training whether it is apprenticeship or internship to increase one's employability.
+                    </p>
+
+                </div>
+                <!--contains post content-->
+
+                <div class="row bb-post-actions">
+
+                    <div class="col">
+                        <button class="btn bb-btn-plum btn-sm">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-fire" viewBox="0 0 16 16">
+                                <path d="M8 16c3.314 0 6-2 6-5.5 0-1.5-.5-4-2.5-6 .25 1.5-1.25 2-1.25 2C11 4 9 .5 6 0c.357 2 .5 4-2 6-1.25 1-2 2.729-2 4.5C2 14 4.686 16 8 16m0-1c-1.657 0-3-1-3-2.75 0-.75.25-2 1.25-3C6.125 10 7 10.5 7 10.5c-.375-1.25.5-3.25 2-3.5-.179 1-.25 2 1 3 .625.5 1 1.364 1 2.25C11 14 9.657 15 8 15"/>
+                            </svg>
+                            <span id="like">
+
+                            </span>
+                        </button>
+                    </div>
+                    <div class="col">
+                        <button id="notInterested" class="btn btn-danger btn-sm">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-ban-fill" viewBox="0 0 16 16">
+                                <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M2.71 12.584c.218.252.454.488.706.707l9.875-9.875a7.034 7.034 0 0 0-.707-.707l-9.875 9.875Z"/>
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="col">
+                        <a href="">
+                            <button class="btn btn-success btn-sm">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-book-fill" viewBox="0 0 16 16">
+                                    <path d="M8 1.783C7.015.936 5.587.81 4.287.94c-1.514.153-3.042.672-3.994 1.105A.5.5 0 0 0 0 2.5v11a.5.5 0 0 0 .707.455c.882-.4 2.303-.881 3.68-1.02 1.409-.142 2.59.087 3.223.877a.5.5 0 0 0 .78 0c.633-.79 1.814-1.019 3.222-.877 1.378.139 2.8.62 3.681 1.02A.5.5 0 0 0 16 13.5v-11a.5.5 0 0 0-.293-.455c-.952-.433-2.48-.952-3.994-1.105C10.413.809 8.985.936 8 1.783"/>
+                                </svg>
+                            </button>
+                        </a>
+                    </div>
+
+                </div>
+
+            </div>
+            <!--Post 2 ends-->
+
+            <!--Post 3-->
+            <div class="row bb-posts">
+
+                <!--contains profile pic and profile name-->
+                <div class="col bb-post-head">
+                    <div class="profile-pic">
+
+                        <img src="Images/con.png" alt="">
+
+                    </div>
+
+                    <div class="profile-name">
+
+                        <a href="">
+                            Jonstance Dev Journal
+                        </a>
+
+                    </div>
+                </div>
+                <!--contains profile pic and profile name-->
+
+                <!--contains post content-->
+                <div class="row bb-post-content">
+
+                    <h2>
+                        Decoding Oracles in Blockchain
+                    </h2>
+
+                    <p>
+                        Welcome to the blockchain circus, where smart contracts perform magical feats! But behind the scenes, 
+                        there's a group of unsung heroes making sure these contracts get the real-world data they need. 
+                        Ladies and gentlemen, meet the oracles - the wizards of the blockchain realm!
+                    </p>
+                    <p>
+                        Imagine a world where smart contracts live in their own little bubble, unaware of the outside happenings. 
+                        Now, enter the oracle, the bridge between the blockchain and the real world. 
+                        It's like inviting a spy to the party, but a really trustworthy one.
+                    </p>
+                    <p>
+                        An oracle is not just a mythical figure with a crystal ball; in the blockchain world, 
+                        it's a service that fetches and verifies real-world data for smart contracts. 
+                        Think of them as messengers who bring news from the outside world to the blockchain stage.
+                   
+                        Picture this: a smart contract wants to know the weather to decide if it should water the virtual crops. 
+                        The oracle must fetch this data without getting fooled by fake rain dances or manipulated forecasts. 
+                        It's like asking a detective to solve a weather mystery!
+                    </p>
+
+                </div>
+                <!--contains post content-->
+
+                <div class="row bb-post-actions">
+
+                    <div class="col" style="width: 100% !important;" >
+                        <button class="btn btn-like btn-secondary btn-sm">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-fire" viewBox="0 0 16 16">
+                                <path d="M8 16c3.314 0 6-2 6-5.5 0-1.5-.5-4-2.5-6 .25 1.5-1.25 2-1.25 2C11 4 9 .5 6 0c.357 2 .5 4-2 6-1.25 1-2 2.729-2 4.5C2 14 4.686 16 8 16m0-1c-1.657 0-3-1-3-2.75 0-.75.25-2 1.25-3C6.125 10 7 10.5 7 10.5c-.375-1.25.5-3.25 2-3.5-.179 1-.25 2 1 3 .625.5 1 1.364 1 2.25C11 14 9.657 15 8 15"/>
+                            </svg>
+                            <span id="like-text"> Like
+                                <span class="likenum">0</span>
+                            </span>
+                        </button>
+                    </div>
+                    <div class="col">
+                        <button id="notInterested" class="btn btn-danger btn-sm">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-ban-fill" viewBox="0 0 16 16">
+                                <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M2.71 12.584c.218.252.454.488.706.707l9.875-9.875a7.034 7.034 0 0 0-.707-.707l-9.875 9.875Z"/>
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="col">
+                        <a href="">
+                            <button class="btn btn-success btn-sm">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-book-fill" viewBox="0 0 16 16">
+                                    <path d="M8 1.783C7.015.936 5.587.81 4.287.94c-1.514.153-3.042.672-3.994 1.105A.5.5 0 0 0 0 2.5v11a.5.5 0 0 0 .707.455c.882-.4 2.303-.881 3.68-1.02 1.409-.142 2.59.087 3.223.877a.5.5 0 0 0 .78 0c.633-.79 1.814-1.019 3.222-.877 1.378.139 2.8.62 3.681 1.02A.5.5 0 0 0 16 13.5v-11a.5.5 0 0 0-.293-.455c-.952-.433-2.48-.952-3.994-1.105C10.413.809 8.985.936 8 1.783"/>
+                                </svg>
+                            </button>
+                        </a>
+                    </div>
+
+                </div>
+
+            </div>
+            <!--Post 3 ends-->
+
+        </div>
+        <!--container that hold all items-->
+
+    </div>
+    <!--main items here-->
+
+
+    <!--profile modal-->
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="bb-profile-pop" aria-hidden="true">
+        <div class="modal-dialog">
+        <div style="background-color: #141414 !important;" class="modal-content">
+            <div class="modal-header">
+            <h1 class="modal-title fs-5" id="bb-profile-pop">Profile</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                
+                <div class="row">
+                    <div class="col bb-modal-profile-img">
+                        <img src="Images/BB-logo.png" alt="">
+
+                        <div class="name">
+                            <h4>
+                                Omobolaji Durojaiye
+                            </h4>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col">
+                        <div class="head">
+                            
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="modal-footer">
+            <button type="button" class="btn btn-sm bb-btn-plum" data-bs-dismiss="modal">Close</button>
+            </div>
+        </div>
+        </div>
+    </div>
+
+
+
+
+    
+
+
+    <script src="script/jquery.js"></script>
+    <script src="js/theme.js"></script>
+    <script src="bootstrap/js/bootstrap.bundle.js"></script>
+    <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script>
+
+        $(document).ready(function() {
+
+            $(".bb-hamburger").click(function(){
+                $(".bb-sidebar").toggleClass("open");
+            });
+
+            
+            // //Theme
+            // $("#bbLight").click(function(){
+            //     $('body').addClass('bb-light-theme')
+            //     // $('body').addClass('p')
+            // });
+
+            // $("#bbDark").click(function(){
+            //     $('body').addClass('bb-dark-theme')
+            //     // $('body').addClass('p')
+            // });
+
+            //Not interested post
+            $("#notInterested").click(function() {
+                $(this).parents(".bb-posts").hide(500);
+            });
+
+        });
+
+        // $(".btnlike").click(function(){
+        //     var $likeNum = $(this).find('.likenum');
+        //     var currentLikes = Number($likeNum.text());
+        //     var newLikes = currentLikes + 1;
+
+        //     if (newLikes == 1) {
+        //         $(this).removeClass("btn-secondary").addClass("btn-primary").html('Liked');
+        //         $likeNum.text('Liked once');
+        //     } 
+
+        //     if (newLikes > 1) {
+        //         $(this).removeClass("btn-secondary").addClass("btn-primary").html('Liked');
+        //         $(this).text('Liked ' + newLikes + ' times');
+        //     }
+
+        //     $likeNum.text(newLikes);
+        // });
+    </script>
+
+</body>
+</html>

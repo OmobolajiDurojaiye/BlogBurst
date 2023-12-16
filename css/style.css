@@ -1,0 +1,147 @@
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+}
+
+header {
+    height: 10vh;
+    display: flex;
+    justify-content: space-between;
+    background-color: #141414;
+    color: #fff;
+}
+
+.bb-btn-modal-plum {
+    background-color: plum !important;
+    color: #fff !important;
+    padding: 6px 10px !important;
+    border: 1px solid plum !important;
+    border-radius: 5px;
+}
+
+.bb-logo {
+    width: 30%;
+    display: flex;
+    align-items: center;
+}
+
+.bb-logo span {
+    font-weight: bold;
+    position: relative;
+    left: 10%;
+}
+
+.bb-logo img {
+    margin-left: 10px;
+}
+
+.bb-nav-links {
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.bb-nav-links ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+    right: 10%;
+}
+
+.bb-nav-links ul li {
+    list-style: none;
+}
+
+.bb-nav-links ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 0.9em;
+    margin: 10px;
+}
+
+.bb-nav-links ul li a:hover {
+    color: plum;
+    transition: .5s;
+}
+
+.bb-intro {
+    height: 70vh;
+    background-color: plum;
+    margin: 0;
+    position: relative;
+    top: 0;
+}
+
+/* .bb-intro-image {
+    background-image: url(../Images/blog-index.gif);
+    /* background-position: center;
+    background-size: cover; 
+} */
+
+.overlay {
+    display: flex;
+    height: inherit;
+    width: inherit;
+    background: linear-gradient(90deg, #141414, plum);
+    /* border-bottom: 1px solid plum; */
+}
+
+.intro-text {
+    width: 60%;
+}
+
+.bb-intro img {
+    height: inherit;
+    position: relative;
+    /* border-bottom: 1px solid red; */
+}
+
+.bb-content-left {
+    /* border: 1px solid red !important; */
+    /* height: 70vh; */
+    position: relative;
+    top: 10vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* margin-left: 5%; */
+    left: 4%;
+}
+
+.bb-content-left a {
+    background-color: plum;
+    width: max-content;
+    padding: 10px;
+    text-decoration: none;
+    color: #fff;
+    border-radius: 10px;
+}
+
+.bb-content-left a:hover {
+    background-color: #fff;
+    color: plum;
+    border: 1px solid plum;
+    transition: .7s;
+}
+
+.bb-content-left h1 {
+    color: #fff;
+    font-size: 5em;
+}
+
+.bb-content-left p {
+    color: #fff;
+    font-size: 1.5em;
+    color: rgb(179, 50, 179);
+}
+
+.top-blogs {
+    height: 100vh;
+    background-color: #141414;
+}

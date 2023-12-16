@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Explore || BlogBurst</title>
+    <link rel="stylesheet" href="explore.css">
+    <link rel="stylesheet" href="sidebar.css">
+    <link rel="stylesheet" href="css/animate.min.css" type="text/css">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.css" type="text/css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Agbalumo&family=Lato:wght@100&family=Montserrat:ital,wght@1,100&family=Open+Sans:wght@300&family=Poppins:ital,wght@0,100;1,100&family=Roboto:wght@100&family=Sometype+Mono&display=swap" rel="stylesheet">
+    <link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+</head>
+<body>
+
+    <!--Dark and Light mode
+    <div class="theme">
+        <button class="btn btn-sm btn-warning">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-brightness-high-fill" viewBox="0 0 16 16">
+                <path d="M12 8a4 4 0 1 1-8 0 4 4 0 0 1 8 0M8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0m0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13m8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5M3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8m10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0m-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0zm9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707M4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708z"/>
+            </svg>
+        </button>
+        
+        <button class="btn btn-sm btn-dark">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-moon-fill" viewBox="0 0 16 16">
+                <path d="M6 .278a.768.768 0 0 1 .08.858 7.208 7.208 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277.527 0 1.04-.055 1.533-.16a.787.787 0 0 1 .81.316.733.733 0 0 1-.031.893A8.349 8.349 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.752.752 0 0 1 6 .278"/>
+            </svg>
+        </button>
+    </div>
+    Dark and Light mode ends here-->
+
+    <div class="bb-sidebar">
+        <div class="bb-hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+
+        <!--top icons to navigate feed-->
+        <div class="bb-side-top">
+            <!--logo icons to navigate feed-->
+            <div class="bb-bblogo">
+                <a href="">
+                    <img src="Images/BB-logo.png" width="40" height="40" alt="BB-logo">
+                </a>
+            </div>
+
+            <!--feed icons to navigate feed-->
+            <div class="bb-sideicons">
+                <a href="feed.html">
+                    <img src="icons/bb-blogs.png" width="30" height="30" alt="feed">
+                    <p style="padding: 0; margin: 0;">
+                        Blogs
+                    </p>
+                </a>
+            </div>
+            <!--feed icons to navigate feed ends-->
+
+            <!--explore icons to navigate feed-->
+            <div class="bb-sideicons bb-active">
+                <a href="#">
+                    <img src="icons/bb-explore.png" width="30" height="30" alt="explore">
+                    <p style="padding: 0; margin: 0;">
+                        Explore
+                    </p>
+                </a>
+            </div>
+            <!--explore icons to navigate feed ends-->
+
+            <!--topics icons to navigate feed-->
+            <div class="bb-sideicons">
+                <a href="connect.html">
+                    <img src="icons/bb-connections.png" width="30" height="30" alt="explore">
+                    <p style="padding: 0; margin: 0;">
+                        Connect
+                    </p>
+                </a>
+            </div>
+            <!-- icons to navigate feed ends-->
+
+        </div>
+        <!--top icons to navigate feed ends-->
+
+        <div class="bb-side-bottom">
+            <!--profile icons to navigate feed-->
+            <div class="bb-sideicons">
+                <a href="profile.html">
+                    <img src="icons/bb-profile.png" width="30" height="30" alt="explore">
+                    <p style="padding: 0; margin: 0;">
+                        profile
+                    </p>
+                </a>
+            </div>
+            <!--profile icons to navigate feed ends-->
+
+            <!--logout icons to navigate feed-->
+            <div class="bb-sideicons">
+                <a href="login.html">
+                    <img src="icons/bb-logout.png" width="30" height="30" alt="explore">
+                    <p style="padding: 0; margin: 0;">
+                        Logout
+                    </p>
+                </a>
+            </div>
+            <!--logout icons to navigate feed ends-->
+        </div>
+    </div>
+
+    
+    <div class="container">
+
+        <div class="bb-explore-genres-container">
+
+            <div class="bb-explore-genres">
+
+                <div class="bb-explore-genres-head">
+                    <img src="icons/edu-write.png" style="margin-bottom: 10px;">
+                    <h4>
+                        Academic
+                    </h4>
+                </div>
+
+                <div class="bb-explore-genres-description">
+                    <p>
+                        Dive into diverse academic insights! Explore expert articles, connect with scholars. 
+                        Uncover the depths of knowledge with our community. 
+                        Start exploring now!
+                    </p>
+                </div>
+
+                <div class="bb-explore-genres-icon">
+                    <button class="btn bb-btn-plum btn-sm">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle-fill" viewBox="0 0 16 16">
+                            <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M8.5 4.5a.5.5 0 0 0-1 0v3h-3a.5.5 0 0 0 0 1h3v3a.5.5 0 0 0 1 0v-3h3a.5.5 0 0 0 0-1h-3z"/>
+                        </svg>
+                    </button>
+                </div>
+
+            </div>
+
+            <div class="bb-explore-genres">
+
+                <div class="bb-explore-genres-head">
+                    <img src="icons/tech-write.png" style="margin-bottom: 10px;">
+                    <h4>
+                        Technical
+                    </h4>
+                </div>
+
+                <div class="bb-explore-genres-description">
+                    <p>
+                        Unlock technical know-how with our concise articles. Explore expert insights, 
+                        stay updated on industry trends. 
+                        Dive into a world of precision and clarity. Start exploring now!
+                    </p>
+                </div>
+
+                <div class="bb-explore-genres-icon">
+                    <button class="btn bb-btn-plum btn-sm">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle-fill" viewBox="0 0 16 16">
+                            <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M8.5 4.5a.5.5 0 0 0-1 0v3h-3a.5.5 0 0 0 0 1h3v3a.5.5 0 0 0 1 0v-3h3a.5.5 0 0 0 0-1h-3z"/>
+                        </svg>
+                    </button>
+                </div>
+
+            </div>
+
+            <div class="bb-explore-genres">
+
+                <div class="bb-explore-genres-head">
+                    <img src="icons/creative-write.png" style="margin-bottom: 10px;">
+                    <h4>
+                        Creative
+                    </h4>
+                </div>
+
+                <div class="bb-explore-genres-description">
+                    <p>
+                        Immerse yourself in creativity! Explore captivating stories, poetry, and unique perspectives. 
+                        embark on a journey of literary discovery. 
+                        Start your creative exploration now!
+                    </p>
+                </div>
+
+                <div class="bb-explore-genres-icon">
+                    <button class="btn bb-btn-plum btn-sm">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle-fill" viewBox="0 0 16 16">
+                            <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M8.5 4.5a.5.5 0 0 0-1 0v3h-3a.5.5 0 0 0 0 1h3v3a.5.5 0 0 0 1 0v-3h3a.5.5 0 0 0 0-1h-3z"/>
+                        </svg>
+                    </button>
+                </div>
+
+
+            </div>
+
+            <div class="bb-explore-genres"> 
+
+                <div class="bb-explore-genres-head">
+                    <img src="icons/poetry-write.png" style="margin-bottom: 10px;">
+                    <h4>
+                        Poetry
+                    </h4>
+                </div>
+
+                <div class="bb-explore-genres-description">
+                    <p>
+                        Dive into the world of verse and emotion! Explore evocative poetry. 
+                        Let the power of language and emotion captivate you. Start your poetic journey now!
+                    </p>
+                </div>
+
+                <div class="bb-explore-genres-icon">
+                    <button class="btn bb-btn-plum btn-sm">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle-fill" viewBox="0 0 16 16">
+                            <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M8.5 4.5a.5.5 0 0 0-1 0v3h-3a.5.5 0 0 0 0 1h3v3a.5.5 0 0 0 1 0v-3h3a.5.5 0 0 0 0-1h-3z"/>
+                        </svg>
+                    </button>
+                </div>
+
+            </div>
+
+            <div class="bb-explore-genres">
+
+                <div class="bb-explore-genres-head">
+                    <img src="icons/journalistic-write.png" style="margin-bottom: 10px;">
+                    <h4>
+                        Journalistic
+                    </h4>
+                </div>
+
+                <div class="bb-explore-genres-description">
+                    <p>
+                        Stay informed with impactful journalism! Explore breaking news, in-depth analyses, and compelling stories. <br>
+                        Start your news journey now!
+                    </p>
+                </div>
+
+                <div class="bb-explore-genres-icon">
+                    <button class="btn bb-btn-plum btn-sm">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle-fill" viewBox="0 0 16 16">
+                            <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M8.5 4.5a.5.5 0 0 0-1 0v3h-3a.5.5 0 0 0 0 1h3v3a.5.5 0 0 0 1 0v-3h3a.5.5 0 0 0 0-1h-3z"/>
+                        </svg>
+                    </button>
+                </div>
+
+
+            </div>
+
+            <div class="bb-explore-genres">
+
+                <div class="bb-explore-genres-head">
+                    <img src="icons/business-write.png" style="margin-bottom: 10px;">
+                    <h4>
+                        Business
+                    </h4>
+                </div>
+
+                <div class="bb-explore-genres-description">
+                    <p>
+                        Refine business communication, explore impactful strategies. 
+                        From reports to correspondence, master the corporate language. Start your journey!
+                    </p>
+                </div>
+
+                <div class="bb-explore-genres-icon">
+                    <button class="btn bb-btn-plum btn-sm">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle-fill" viewBox="0 0 16 16">
+                            <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M8.5 4.5a.5.5 0 0 0-1 0v3h-3a.5.5 0 0 0 0 1h3v3a.5.5 0 0 0 1 0v-3h3a.5.5 0 0 0 0-1h-3z"/>
+                        </svg>
+                    </button>
+                </div>
+
+
+            </div>
+
+
+            <div class="bb-explore-genres">
+
+                <div class="bb-explore-genres-head">
+                    <img src="icons/food-and-recipe-write.png" style="margin-bottom: 10px;">
+                    <h4>
+                        Food and Recipe
+                    </h4>
+                </div>
+
+                <div class="bb-explore-genres-description">
+                    <p>
+                        Unleash your creativity and refine your writing craft. Dive into expert tips, prompts, and inspiration. 
+                        Write passionately, evolve consistently, and express yourself with impact.
+                    </p>
+                </div>
+
+                <div class="bb-explore-genres-icon">
+                    <button class="btn bb-btn-plum btn-sm">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle-fill" viewBox="0 0 16 16">
+                            <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M8.5 4.5a.5.5 0 0 0-1 0v3h-3a.5.5 0 0 0 0 1h3v3a.5.5 0 0 0 1 0v-3h3a.5.5 0 0 0 0-1h-3z"/>
+                        </svg>
+                    </button>
+                </div>
+
+
+            </div>
+
+
+            <div class="bb-explore-genres">
+
+                <div class="bb-explore-genres-head">
+                    <img src="icons/nature-write.png" style="margin-bottom: 10px;">
+                    <h4>
+                        Nature
+                    </h4>
+                </div>
+
+                <div class="bb-explore-genres-description">
+                    <p>
+                        Dive into the enchanting wonders of the natural world through captivating nature writing. 
+                        Connect with wildlife, ecosystems, and serenity.
+                    </p>
+                </div>
+
+                <div class="bb-explore-genres-icon">
+                    <button class="btn bb-btn-plum btn-sm">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle-fill" viewBox="0 0 16 16">
+                            <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M8.5 4.5a.5.5 0 0 0-1 0v3h-3a.5.5 0 0 0 0 1h3v3a.5.5 0 0 0 1 0v-3h3a.5.5 0 0 0 0-1h-3z"/>
+                        </svg>
+                    </button>
+                </div>
+
+
+            </div>
+
+
+            <div class="bb-explore-genres">
+
+                <div class="bb-explore-genres-head">
+                    <img src="icons/humor-write.png" style="margin-bottom: 10px;">
+                    <h4>
+                        Humor
+                    </h4>
+                </div>
+
+                <div class="bb-explore-genres-description">
+                    <p>
+                        Embark on a laughter-filled journey with our humor writing. 
+                        Discover comedic tales, witty observations, and hilarious anecdotes. Unwind with laughter today!
+                    </p>
+                </div>
+
+                <div class="bb-explore-genres-icon">
+                    <button class="btn bb-btn-plum btn-sm">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle-fill" viewBox="0 0 16 16">
+                            <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M8.5 4.5a.5.5 0 0 0-1 0v3h-3a.5.5 0 0 0 0 1h3v3a.5.5 0 0 0 1 0v-3h3a.5.5 0 0 0 0-1h-3z"/>
+                        </svg>
+                    </button>
+                </div>
+
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+
+
+
+
+    
+
+
+    <script src="script/jquery.js"></script>
+    <script src="bootstrap/js/bootstrap.bundle.js"></script>
+    <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script>
+
+        $(document).ready(function() {
+
+            $(".bb-hamburger").click(function(){
+                $(".bb-sidebar").toggleClass("open");
+            });
+
+        });
+
+    </script>
+
+</body>
+</html>

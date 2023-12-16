@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Profile || BlogBurst</title>
+    <link rel="stylesheet" href="profile.css">
+    <link rel="stylesheet" href="sidebar.css">
+    <link rel="stylesheet" href="css/animate.min.css" type="text/css">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.css" type="text/css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Agbalumo&family=Lato:wght@100&family=Montserrat:ital,wght@1,100&family=Open+Sans:wght@300&family=Poppins:ital,wght@0,100;1,100&family=Roboto:wght@100&family=Sometype+Mono&display=swap" rel="stylesheet">
+    <link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+</head>
+<body>
+
+    <!--Dark and Light mode
+    <div class="theme">
+        <button class="btn btn-sm btn-warning">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-brightness-high-fill" viewBox="0 0 16 16">
+                <path d="M12 8a4 4 0 1 1-8 0 4 4 0 0 1 8 0M8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0m0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13m8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5M3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8m10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0m-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0zm9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707M4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708z"/>
+            </svg>
+        </button>
+        
+        <button class="btn btn-sm btn-dark">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-moon-fill" viewBox="0 0 16 16">
+                <path d="M6 .278a.768.768 0 0 1 .08.858 7.208 7.208 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277.527 0 1.04-.055 1.533-.16a.787.787 0 0 1 .81.316.733.733 0 0 1-.031.893A8.349 8.349 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.752.752 0 0 1 6 .278"/>
+            </svg>
+        </button>
+    </div>
+    Dark and Light mode ends here-->
+
+    <div class="bb-sidebar open">
+        <div class="bb-hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+
+        <!--top icons to navigate feed-->
+        <div class="bb-side-top">
+            <!--logo icons to navigate feed-->
+            <div class="bb-bblogo">
+                <a href="">
+                    <img src="Images/BB-logo.png" width="40" height="40" alt="BB-logo">
+                </a>
+            </div>
+
+            <div class="bb-media-logo">
+
+                <!--feed icons to navigate feed-->
+                <div class="bb-sideicons">
+                    <a href="feed.html">
+                        <img src="icons/bb-blogs.png" width="30" height="30" alt="feed">
+                        <p style="padding: 0; margin: 0;">
+                            Blogs
+                        </p>
+                    </a>
+                </div>
+                <!--feed icons to navigate feed ends-->
+
+                <!--explore icons to navigate feed-->
+                <div class="bb-sideicons">
+                    <a href="explore.html">
+                        <img src="icons/bb-explore.png" width="30" height="30" alt="explore">
+                        <p style="padding: 0; margin: 0;">
+                            Explore
+                        </p>
+                    </a>
+                </div>
+                <!--explore icons to navigate feed ends-->
+
+                <!--topics icons to navigate feed-->
+                <div class="bb-sideicons">
+                    <a href="connect.html">
+                        <img src="icons/bb-connections.png" width="30" height="30" alt="explore">
+                        <p style="padding: 0; margin: 0;">
+                            Connect
+                        </p>
+                    </a>
+                </div>
+                <!-- icons to navigate feed ends-->
+
+            </div>
+
+            
+
+        </div>
+        <!--top icons to navigate feed ends-->
+
+        <div class="bb-side-bottom">
+            <!--profile icons to navigate feed-->
+            <div class="bb-sideicons bb-active">
+                <a href="#">
+                    <img src="icons/bb-profile.png" width="30" height="30" alt="explore">
+                    <p style="padding: 0; margin: 0;">
+                        profile
+                    </p>
+                </a>
+            </div>
+            <!--profile icons to navigate feed ends-->
+
+            <!--logout icons to navigate feed-->
+            <div class="bb-sideicons">
+                <a href="login.html">
+                    <img src="icons/bb-logout.png" width="30" height="30" alt="explore">
+                    <p style="padding: 0; margin: 0;">
+                        Logout
+                    </p>
+                </a>
+            </div>
+            <!--logout icons to navigate feed ends-->
+        </div>
+    </div>
+
+    
+    <div class="container">
+
+        <div class="row bb-profile-basicinfo">
+            
+            <div class="col user-info">
+                
+                <div class="user-info-head">
+                    <div class="change" style="position: absolute; left: 25%; top: 30px;">
+                        <button class="btn btn-sm btn-secondary mt-3">Edit</button>
+                    </div>
+                    <img src="Images/BB-logo.png" alt="">
+                    <p style="color: plum !important;">
+                        Omobolaji Durojaiye
+                    </p>
+                </div>
+
+                <div class="bio">
+                    <h4 style="text-align: center;">
+                        Bio
+                    </h4>
+                    <p>
+                        Passionate wordsmith weaving stories from the ordinary to the extraordinary. 
+                    </p>
+                </div>
+
+                <div class="social"> <!-- animate__animated  animate__swing animate__repeat-3 animate__delay-2s-->
+                    <div class="icons">
+                        <a href="">
+                            <img src="icons/bb-facebook.png" height="20" width="30" class="img-fluid">
+                        </a>
+                    </div>
+                    <div class="icons">
+                        <a href="">
+                            <img src="icons/bb-instagram.png" height="20" width="30" class="img-fluid">
+                        </a>
+                    </div>
+                    <div class="icons">
+                        <a href="">
+                            <img src="icons/bb-x.png" height="20" width="30" class="img-fluid">
+                        </a>
+                    </div>
+                    <div class="icons">
+                        <a href="">
+                            <img src="icons/bb-email.png" height="20" width="30" class="img-fluid">
+                        </a>
+                    </div>
+                    <div class="icons">
+                        <a href="">
+                            <img src="icons/bb-github.png" height="20" width="30" class="img-fluid">
+                        </a>
+                    </div>
+                </div>
+            
+            </div>
+
+            <div class="col user-info">
+
+                <div class="user-info-head">
+                    <h3 style="color: plum !important;">
+                        Send Me a Message
+                    </h3>
+                </div>
+
+                <div class="user-info-content">
+                    <form action="" style="border-bottom: 1px solid plum;">
+
+                        <textarea style="background-color: black; color: white; border: 1px solid plum;" class="form-control" name="" id="" cols="20" rows="3"></textarea>
+                        <div style="margin: 10px 0;">
+                            <button class="btn bb-btn-plum btn-sm">Send Message</button>
+                        </div>
+
+                    </form>
+
+                    <div class="inbox">
+
+                        <p style="position: relative; top: 5vh;">
+                            No message at the moment, Check Later
+                        </p>
+
+                    </div>
+                </div>
+
+
+
+            </div>
+
+            <div class="col user-info">
+
+                <div class="user-info-head">
+                    <h3 style="color: plum !important;">
+                        Posts
+                    </h3>
+                </div>
+
+                <div class="posts">
+                    <h5>
+                        Importance of Wildlife...
+                        <span style="padding-left: 20px;"> 
+                            <button class="btn btn-sm btn-warning">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pen-fill" viewBox="0 0 16 16">
+                                    <path d="m13.498.795.149-.149a1.207 1.207 0 1 1 1.707 1.708l-.149.148a1.5 1.5 0 0 1-.059 2.059L4.854 14.854a.5.5 0 0 1-.233.131l-4 1a.5.5 0 0 1-.606-.606l1-4a.5.5 0 0 1 .131-.232l9.642-9.642a.5.5 0 0 0-.642.056L6.854 4.854a.5.5 0 1 1-.708-.708L9.44.854A1.5 1.5 0 0 1 11.5.796a1.5 1.5 0 0 1 1.998-.001"/>
+                                </svg>
+                            </button>
+                            
+                            <button class="btn btn-sm btn-danger">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-trash-fill" viewBox="0 0 16 16">
+                                    <path d="M2.5 1a1 1 0 0 0-1 1v1a1 1 0 0 0 1 1H3v9a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V4h.5a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H10a1 1 0 0 0-1-1H7a1 1 0 0 0-1 1zm3 4a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-1 0v-7a.5.5 0 0 1 .5-.5M8 5a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-1 0v-7A.5.5 0 0 1 8 5m3 .5v7a.5.5 0 0 1-1 0v-7a.5.5 0 0 1 1 0"/>
+                                </svg>
+                            </button>
+                        </span>
+                    </h5>
+                </div>
+
+                <div class="posts">
+                    <h5>
+                        Jquery In Five minutes...
+                        <span style="padding-left: 20px;"> 
+                            <button class="btn btn-sm btn-warning">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pen-fill" viewBox="0 0 16 16">
+                                    <path d="m13.498.795.149-.149a1.207 1.207 0 1 1 1.707 1.708l-.149.148a1.5 1.5 0 0 1-.059 2.059L4.854 14.854a.5.5 0 0 1-.233.131l-4 1a.5.5 0 0 1-.606-.606l1-4a.5.5 0 0 1 .131-.232l9.642-9.642a.5.5 0 0 0-.642.056L6.854 4.854a.5.5 0 1 1-.708-.708L9.44.854A1.5 1.5 0 0 1 11.5.796a1.5 1.5 0 0 1 1.998-.001"/>
+                                </svg>
+                            </button>
+                            
+                            <button class="btn btn-sm btn-danger">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-trash-fill" viewBox="0 0 16 16">
+                                    <path d="M2.5 1a1 1 0 0 0-1 1v1a1 1 0 0 0 1 1H3v9a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V4h.5a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H10a1 1 0 0 0-1-1H7a1 1 0 0 0-1 1zm3 4a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-1 0v-7a.5.5 0 0 1 .5-.5M8 5a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-1 0v-7A.5.5 0 0 1 8 5m3 .5v7a.5.5 0 0 1-1 0v-7a.5.5 0 0 1 1 0"/>
+                                </svg>
+                            </button>
+                        </span>
+                    </h5>
+                </div>
+
+                <div class="posts">
+                    <h5>
+                        How To Create Naviga...
+                        <span style="padding-left: 20px;"> 
+                            <button class="btn btn-sm btn-warning">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pen-fill" viewBox="0 0 16 16">
+                                    <path d="m13.498.795.149-.149a1.207 1.207 0 1 1 1.707 1.708l-.149.148a1.5 1.5 0 0 1-.059 2.059L4.854 14.854a.5.5 0 0 1-.233.131l-4 1a.5.5 0 0 1-.606-.606l1-4a.5.5 0 0 1 .131-.232l9.642-9.642a.5.5 0 0 0-.642.056L6.854 4.854a.5.5 0 1 1-.708-.708L9.44.854A1.5 1.5 0 0 1 11.5.796a1.5 1.5 0 0 1 1.998-.001"/>
+                                </svg>
+                            </button>
+                            
+                            <button class="btn btn-sm btn-danger">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-trash-fill" viewBox="0 0 16 16">
+                                    <path d="M2.5 1a1 1 0 0 0-1 1v1a1 1 0 0 0 1 1H3v9a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V4h.5a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H10a1 1 0 0 0-1-1H7a1 1 0 0 0-1 1zm3 4a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-1 0v-7a.5.5 0 0 1 .5-.5M8 5a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-1 0v-7A.5.5 0 0 1 8 5m3 .5v7a.5.5 0 0 1-1 0v-7a.5.5 0 0 1 1 0"/>
+                                </svg>
+                            </button>
+                        </span>
+                    </h5>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="row bb-profile-blogger-additional">
+            
+            <div class="col bb-blogger-panel">
+
+                <a href="" title="Add New Post">
+                    <img src="icons/bb-add-post.png" height="40" width="40" class="img-fluid">
+                    <p style="color: white; font-size: 0.8em;">
+                        Add New Post
+                    </p>
+                </a>
+
+            </div>
+
+            <div class="col bb-blogger-panel">
+
+                <a href="" title="Collaborate">
+                    <img src="icons/bb-collaboration.png" height="40" width="40" class="img-fluid">
+                    <p style="color: white; font-size: 0.8em;">
+                        Collaborate
+                    </p>
+                </a>
+
+            </div>
+
+            <div class="col bb-blogger-panel">
+
+                <a href="" title="View All Post">
+                    <img src="icons/bb-all-posts.png" height="40" width="40" class="img-fluid">
+                    <p style="color: white; font-size: 0.8em;">
+                        All Post
+                    </p>
+                </a>
+
+            </div>
+
+            <div class="col bb-blogger-panel">
+
+                <a href="" title="Support & Donate">
+                    <img src="icons/bb-donation.png" height="40" width="40" class="img-fluid">
+                    <p style="color: white; font-size: 0.8em;">
+                        Donate
+                    </p>
+                </a>
+
+            </div>
+
+            <div class="col bb-blogger-panel">
+
+                <img src="Images/BB-logo.png"  height="40" width="40" class="img-fluid">
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+
+
+
+
+    
+
+
+    <script src="script/jquery.js"></script>
+    <script src="bootstrap/js/bootstrap.bundle.js"></script>
+    <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script>
+
+        $(document).ready(function() {
+
+            $(".bb-hamburger").click(function(){
+                $(".bb-sidebar").toggleClass("open");
+            });
+
+        });
+
+    </script>
+
+</body>
+</html>
