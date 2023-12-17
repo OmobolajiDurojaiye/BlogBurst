@@ -67,7 +67,7 @@
 
                 <!--feed icons to navigate feed-->
                 <div class="bb-sideicons">
-                    <a href="feed.html">
+                    <a href="feed.html" data-bs-toggle="tooltip" data-bs-placement="right" title="Blogs">
                         <img src="icons/bb-blogs.png" width="30" height="30" alt="feed">
                         <p style="padding: 0; margin: 0;">
                             Blogs
@@ -78,10 +78,10 @@
 
                 <!--explore icons to navigate feed-->
                 <div class="bb-sideicons">
-                    <a href="explore.html">
+                    <a href="explore.html" data-bs-toggle="tooltip" data-bs-placement="right" title="Categories">
                         <img src="icons/bb-explore.png" width="30" height="30" alt="explore">
                         <p style="padding: 0; margin: 0;">
-                            Explore
+                            Categories
                         </p>
                     </a>
                 </div>
@@ -89,7 +89,7 @@
 
                 <!--topics icons to navigate feed-->
                 <div class="bb-sideicons">
-                    <a href="connect.html">
+                    <a href="connect.html" data-bs-toggle="tooltip" data-bs-placement="right" title="Connect">
                         <img src="icons/bb-connections.png" width="30" height="30" alt="explore">
                         <p style="padding: 0; margin: 0;">
                             Connect
@@ -108,7 +108,7 @@
         <div class="bb-side-bottom">
             <!--profile icons to navigate feed-->
             <div class="bb-sideicons bb-active">
-                <a href="#">
+                <a href="#" data-bs-toggle="tooltip" data-bs-placement="right" title="Profile">
                     <img src="icons/bb-profile.png" width="30" height="30" alt="explore">
                     <p style="padding: 0; margin: 0;">
                         profile
@@ -119,7 +119,7 @@
 
             <!--logout icons to navigate feed-->
             <div class="bb-sideicons">
-                <a href="login.html">
+                <a href="login.html" data-bs-toggle="tooltip" data-bs-placement="right" title="Logout">
                     <img src="icons/bb-logout.png" width="30" height="30" alt="explore">
                     <p style="padding: 0; margin: 0;">
                         Logout
@@ -190,7 +190,7 @@
 
                 <div class="user-info-head">
                     <h3 style="color: plum !important;">
-                        Send Me a Message
+                        Send Me a Feedback
                     </h3>
                 </div>
 
@@ -207,7 +207,7 @@
                     <div class="inbox">
 
                         <p style="position: relative; top: 5vh;">
-                            No message at the moment, Check Later
+                            No feedback at the moment, Check Later
                         </p>
 
                     </div>
@@ -361,6 +361,13 @@
             $(".bb-hamburger").click(function(){
                 $(".bb-sidebar").toggleClass("open");
             });
+
+            //Bootstrap tooltip starts
+            var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+                var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+                return new bootstrap.Tooltip(tooltipTriggerEl)
+            });
+            //Bootstrap tooltip ends
 
         });
 
