@@ -141,7 +141,56 @@ header {
     color: rgb(179, 50, 179);
 }
 
-.top-blogs {
-    height: 100vh;
+.type-blogs {
+    height: max-content;
+    padding: 40px 0;
     background-color: #141414;
+}
+
+.type-head {
+    height: max-content;
+    padding: 5px 0;
+}
+
+.type-head h2 {
+    color: #fff;
+    text-align: center;
+}
+
+.type-head p {
+    color: #fff;
+    text-align: center;
+}
+
+.blogs-types {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+}
+
+.type-blogs .type {
+    height: 10vh;
+    width: 30%;
+    border: 2px solid black;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.type-blogs .type img {
+    height: 40px;
+    width: 40px;
+    border-radius: 10px;
+}
+
+.type-blogs .type p {
+    color: #fff;
+    position: relative;
+    top: 10px;
 }
